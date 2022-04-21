@@ -1,0 +1,55 @@
+1). composer global require laravel/installer
+2). laravel new lareactecom.
+2). composer require laravel/ui
+3). php artisan ui react
+  
+OR
+  
+3). php artisan ui react --auth
+
+4. composer require laravel/sanctum
+4.1. php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+4.2. php artisan migrate
+
+5. php artisan make:controller API/Auth/RegisterController --model=User --resource
+
+6. php artisan make:controller API/Auth/LoginController --model=User --resource
+
+7. php artisan make:controller API/UserController --model=User --resource
+
+8. php artisan make:middleware AminAPIMiddleware
+
+9. php artisan make:controller API/CategoryController --model=Category
+
+10. php artisan make:migration create_categories_table
+
+11.  php artisan make:controller API/ProductController --model=Product
+
+12. php artisan make:migration create_products_table
+
+13. php artisan make:controller API/FrontendController
+
+14. php artisan make:controller API/CartController --model=Cart
+ 
+15. php artisan make:migration create_orders_table
+
+16. php artisan make:migration create_orderitems_table
+
+17. php artisan make:controller API/CheckoutController --model=Order -r
+
+
+
+
+echo "# Laravel-Api-React-Mini-Cart" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mazhar00786/Laravel-Api-React-Mini-Cart.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/mazhar00786/Laravel-Api-React-Mini-Cart.git
+git branch -M main
+git push -u origin main
